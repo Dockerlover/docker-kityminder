@@ -74,7 +74,7 @@ grunt
 
 #### 镜像特点
 
-- 2015/8/1 继承基础镜像docker-tornado
+- 2015/8/1 继承基础镜像docker-apache
 
 #### 使用方法
 
