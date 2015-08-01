@@ -86,4 +86,12 @@ grunt
 
 - 运行容器
 
-        docker -it -d --name kityminder -p 8004:80 docker-kityminder
+        docker run -it -d --name kityminder -p 8004:80 docker-kityminder
+
+- 访问kity minder
+
+        http://localhost:8004
+
+    你将会看到如下的内容：
+    
+    ![snap.png](snap.png)
