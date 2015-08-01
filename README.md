@@ -67,3 +67,23 @@ grunt
 ```
 
 运行完成后，会发现生成了 `dist` 目录，里面就是可运行的 kityminder。
+
+## Docker Kityminder
+
+我们希望能快速部署一个kityminder的预览页面，所以我们采用`dist`目录下的文件直接进行构建。
+
+#### 镜像特点
+
+- 2015/8/1 继承基础镜像docker-tornado
+
+#### 使用方法
+
+- 获取代码并构建
+
+        git clone https://github.com/Dockerlover/docker-kityminder.git
+        cd docker-kityminder
+        docker build -t docker-kityminder .
+
+- 运行容器
+
+        docker -it -d --name kityminder -p 8004:80 docker-kityminder
